@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:padding="10dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/img"></ImageView>
+
+    <TextView
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File Name askdj asdjas djas daskgjd askjda saksjd asjd askjdaksd as"
+        android:id="@+id/name"
+        android:maxHeight="45dp"
+        android:layout_toLeftOf="@+id/dl"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        />
+    <TextView
+
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toLeftOf="@+id/dl"
+        android:text="type"
+        android:id="@+id/type"></TextView>
+    <TextView
+
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:text="17 Nov,19"
+        android:id="@+id/time"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dl"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:id="@+id/msg"/>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete"/>
+
+    <ImageView
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_file_download_black_24dp"
+        android:layout_toLeftOf="@+id/share"
+        android:id="@+id/dl"/>
+
+    <ImageView
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="2dp"
+
+        android:src="@drawable/ic_share_black_24dp"
+        android:layout_toLeftOf="@+id/delete"
+        android:id="@+id/share"/>
+
+</RelativeLayout>
+
